@@ -1,0 +1,33 @@
+Table of Contents
+1. Overview
+2. Evaluation
+3. Submission File
+4. About the Tabular Playground Series
+5. Synthetically-Generated Datasets
+6. Dataset Description
+7. Files
+Overview
+Predict the academic risk of students in higher education.
+Evaluation
+Submissions are evaluated using the accuracy score.
+Submission File
+For each id row in the test set, you must predict the class value of the Target, which is a categorical academic risk assessment. The file should contain a header and follow this format:
+id,Target
+76518,Graduate
+76519,Graduate
+76520,Graduate
+About the Tabular Playground Series
+The goal of the Tabular Playground Series is to provide the Kaggle community with a variety of light-weight challenges to learn and sharpen skills in different aspects of machine learning and data science. Each competition typically lasts a few weeks, though durations may vary. These challenges use synthetically generated datasets from real-world data, providing an opportunity to iterate through various model and feature engineering ideas, create visualizations, and more.
+Synthetically-Generated Datasets
+Using synthetic data for Playground competitions balances having real-world data (with named features) and ensuring test labels are not publicly available. This allows for competitions with more interesting datasets. While challenges with synthetic data generation remain, state-of-the-art techniques now produce datasets with fewer artifacts. Feedback on the datasets is welcomed to help improve future competitions.
+Dataset Description
+The dataset for this competition (both train and test) was generated from a deep learning model trained on the "Predict Students' Dropout and Academic Success" dataset. Feature distributions are close to, but not exactly the same as the original. Feel free to use the original dataset to explore differences and see if incorporating it in training improves model performance. Refer to the original dataset for feature explanations.
+Files
+* train.csv: The training dataset; Target is the categorical target.
+* test.csv: The test dataset; predict the class of Target for each row.
+* sample_submission.csv: A sample submission file in the correct format.
+sample_submission.csv columns:
+* id
+* Target
+
+
